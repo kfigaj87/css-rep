@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+#container {
+  background-color: black;
+  color: white;
+  font-size: 200px;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.animation {
+  position: absolute;
+  text-align: center;
+  width: 100vw;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#counting-downFinal {
+  font-size: 200px;
+  line-height: inherit;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#counting-down10,
+#counting-down9,
+#counting-down8,
+#counting-down7,
+#counting-down6,
+#counting-down5,
+#counting-down4,
+#counting-down3,
+#counting-down2,
+#counting-down1,
+#counting-downFinal {
+  text-align: center;
+  visibility: hidden;
+}
+
+@keyframes off {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes on {
+  0%,
+  100% {
+    visibility: visible;
+  }
+}
+#counting-down10 {
+  animation-duration: 1s;
+  animation-name: off;
+  animation-timing-function: ease-in-out;
+}
+
+#counting-down9 {
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-name: off;
+  animation-timing-function: ease-in-out;
+}
+#counting-down8 {
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-name: off;
+  animation-timing-function: ease-in-out;
+}
+#counting-down7 {
+  animation-delay: 3s;
+  animation-duration: 1s;
+  animation-name: off;
+  animation-timing-function: ease-in-out;
+}
+#counting-down6 {
+  animation-delay: 4s;
+  animation-duration: 1s;
+  animation-name: off;
+  animation-timing-function: ease-in-out;
+}
+#counting-down5 {
+  animation-delay: 5s;
+  animation-duration: 1s;
+  animation-name: off;
+  animation-timing-function: ease-in-out;
+}
+#counting-down4 {
+  animation-delay: 6s;
+  animation-duration: 1s;
+  animation-name: off;
+  animation-timing-function: ease-in-out;
+}
+#counting-down3 {
+  animation-delay: 7s;
+  animation-duration: 1s;
+  animation-name: off;
+  animation-timing-function: ease-in-out;
+}
+#counting-down2 {
+  animation-delay: 8s;
+  animation-duration: 1s;
+  animation-name: off;
+  animation-timing-function: ease-in-out;
+}
+#counting-down1 {
+  animation-delay: 9s;
+  animation-duration: 1s;
+  animation-name: off;
+  animation-timing-function: ease-in-out;
+}
+#counting-downFinal {
+  animation-delay: 10s;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-name: on;
+  animation-timing-function: ease-in-out;
+}
