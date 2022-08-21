@@ -1,0 +1,61 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#container {
+  width: 270px;
+  height: 270px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: space-evenly;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  border: 1px solid white;
+}
+
+.circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  border: 1px solid black;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.red {
+  background-color: red;
+}
+
+.pink {
+  background-color: pink;
+}
+.blue {
+  background-color: blue;
+}
+
+.grey {
+  background-color: gray;
+}
+
+.purple {
+  background-color: purple;
+}
+.black {
+  background-color: black;
+}
+.yellow {
+  background-color: yellow;
+}
+.orange {
+  background-color: orange;
+}
+.green {
+  background-color: green;
+}
